@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/* general settings */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1f27;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* so there is no scroll bar on the page */
+  padding: 5vh; /* vh = view height -> 5% */
+}
+
+a {
+  color: royalblue;
+  text-decoration: none;
+}
+
+.link-return:hover {
+  color: white;
+}
+
+input,
+label {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+input:focus,
+label:focus {
+  /* Strips the edges of the input when you click on it */
+  outline: none;
+}
+
+/* form settings */
+
+#main-container {
+  width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #181920;
+  border-radius: 5px;
+  padding: 25px;
+  color: white;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#main-container h1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 1.6rem; /* adapted to the root element of the page */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* to align the elements */
+  justify-content: space-between; /* creating the spacing between inputs*/
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 3%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input {
+  background-color: #181920;
+  padding: 12.5px;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.input-focus:focus {
+  border-color: royalblue;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+}
+
+input[type="submit"] {
+  background-color: royalblue;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input:hover[type="submit"] {
+  background-color: rgb(19, 56, 168);
+}
+
+.inp-border-bottom {
+  border-bottom: 1px solid white;
+}
+
+#agreement,
+#agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+/* validations */
+
+.error-validation {
+  color: red;
+  position: absolute;
+  top: 80%;
+  font-size: 0.8rem;
+}
+
+.template {
+  display: none;
+}
+
+/* Background */
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("/img/2.jpg") top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
+/* Footer */
+.page-footer {
+  background-color: whitesmoke;
+  opacity: 0.99999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.page-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer h3 {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.page-footer p.copyrights {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-wrap: inherit;
+  flex-direction: row;
+  padding: 15px 15% 0;
+  justify-content:space-around
+}
+
+#index-page .page-content {
+margin-top: 0;
+	}
+
+  .page-footer .sl {
+    display: table;
+  }
+
+   .page-footer .sl-logo {
+    display: flex;
+  }

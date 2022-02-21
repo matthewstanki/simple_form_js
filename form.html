@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Simple Form App</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./src/style/form.css">
+
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/c1dce8647d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container">
+        <h1>Register</h1>
+        <form action="" id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" class="input-focus inp-border-bottom" id="email"
+                    placeholder="Enter your email" data-min-length="6" data-required data-email-validate>
+            </div>
+            <div class="half-box spacing">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="input-focus inp-border-bottom" id="name"
+                    placeholder="Now enter your name" data-max-length="16" data-required data-only-letters>
+            </div>
+            <div class="half-box">
+                <label for="lastname">Surname</label>
+                <input type="text" name="lastname" class="input-focus inp-border-bottom" id="lastname"
+                    placeholder="And your surname" data-required>
+            </div>
+            <div class="half-box spacing">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="input-focus inp-border-bottom" id="password"
+                    placeholder="Your password" data-required data-password-validate>
+            </div>
+            <div class="half-box">
+                <label for="passconfirmation">Confirm password</label>
+                <input type="password" name="passconfirmation" class="input-focus inp-border-bottom"
+                    id="passconfirmation" placeholder="Confirm your password" data-required data-equal="password"
+                    data-password-validate>
+            </div>
+            <div>
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">I read and accept the <a href="#">terms and
+                        conditions</a>.</label>
+            </div>
+            <div class="full-box">
+                <input type="submit" value="Register" id="btn-submit">
+            </div>
+        </form>
+        <a href="./index.html" class="link-return material-icons">arrow_back</a>
+    </div>
+    <p class="error-validation template"></p>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="section-wrapper">
+            <section>
+                <h3>Address</h3>
+                <p>
+                <address>Białystok, Poland</address>
+                </p>
+            </section>
+            <section>
+                <h3>Contact Me</h3>
+                <p>via <a href="mailto:mateuszstankiewicz999@gmail.com">email</a></p>
+            </section>
+            <section class="sl">
+                <h3>Social Links</h3>
+                <div class="sl-logo">
+                    <a href="https://twitter.com/MatthewStanki" target="_blank">
+                        <i class="fa-brands fa-twitter-square fa-xl"></i></a>
+                    <a href="https://www.instagram.com/matthewstanki/" target="_blank">
+                        <i class="fa-brands fa-instagram-square fa-xl"></i></a>
+                    <a href="https://github.com/matthewstanki" target="_blank">
+                        <i class="fa-brands fa-github-square fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/mateusz-stankiewicz/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <div>
+            </section>
+        </div>
+        <p class="copyrights"><small>&copy; 2022 My Simple Form JS - All rights reserved
+                <a href="https://matthewstanki.github.io" target="_blank" title="Link do mojej strony">Created by
+                    Mateusz Stankiewicz</a></small></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

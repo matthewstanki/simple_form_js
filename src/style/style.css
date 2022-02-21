@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+body {
+    background-color: #1b1f27;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden; /*so there is no scroll bar on the page*/
+}
+
+.area-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: #181920;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+img {
+    width: 70px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login input {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+form [type="submit"] {
+    background-color: rgb(214, 31, 31);
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form:hover [type="submit"] {
+    background-color: rgb(19, 56, 168);
+}
+
+p {
+    color: rgba(255, 255, 255, 0.600);
+    font-size: 14px;
+}
+
+a {
+   color: rgb(211, 30, 30);
+   text-decoration: none;
+   margin-left: 5px; 
+}
+
+a:hover {
+    color: white;
+}
+
+/* Background */
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("/img/fieldbg.jpg") top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
+/* Footer */
+.page-footer {
+  background-color: whitesmoke;
+  opacity: 0.99999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.page-footer p {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+.page-footer h3 {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.page-footer p.copyrights {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-wrap: inherit;
+  flex-direction: row;
+  padding: 15px 15% 0;
+  justify-content:space-around
+}
+
+#index-page .page-content {
+margin-top: 0;
+	}
+
+  .page-footer .sl {
+    display: table;
+  }
+
+   .page-footer .sl-logo {
+    display: flex;
+  }
