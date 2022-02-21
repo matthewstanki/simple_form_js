@@ -165,7 +165,7 @@ class Validator {
         }
     }
 
-     // Clear screen validations
+     // Clean screen validations
      cleanValidations(validations) {
         validations.forEach(el => el.remove());
     }

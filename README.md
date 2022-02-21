@@ -4,9 +4,14 @@ Completed On: 21 February 2022
 
 ## User Stories
 
-- I can add, subtract, multiply and divide two numbers.
-- I can clear the input field with a clear button.
-- I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.
+- I can login.
+- I can register.
+- All buttons and fill fields working.
+- Hints working if u having problem with register.
+
+## Future Plans
+- Build Database.
+- Save all actions in txt. files.
 
 ## Browser Support
 
